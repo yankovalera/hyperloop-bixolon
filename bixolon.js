@@ -8,12 +8,12 @@ handler = new Handler(function(res){
 });
 
 var bixolonPrinter  = new Bixolon(activity, handler, null);
-mBixolon.connect("XX:XX:XX:XX:XX:XX");
+bixolonPrinter.connect("XX:XX:XX:XX:XX:XX");
 
 var ticket = "TEXT TO PRINT";
 
 //workaround for connection time wait
 setTimeout(function (){
-    mBixolon.printText(ticket, 0, 0, 0, false);
-    mBixolon.disconnect();
+    bixolonPrinter.printText(ticket, 0, 0, 0, false);
+    bixolonPrinter.disconnect();
 }, 100000);
