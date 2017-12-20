@@ -16,4 +16,4 @@ var ticket = "TEXT TO PRINT";
 setTimeout(function (){
     bixolonPrinter.printText(ticket, 0, 0, 0, false);
     bixolonPrinter.disconnect();
-}, 100000);
+}, 10000);
